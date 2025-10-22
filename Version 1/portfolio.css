@@ -1,0 +1,92 @@
+@import url("https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap");
+
+.food-munch-logo {
+    width: 80px;
+    height: 70px;
+  }
+
+.Home{
+  height: 90vh;
+  margin-top: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: aqua;
+  text-align: center;
+}
+
+.wcme-section{
+  background-color: brown;
+  height: 100vh;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.projects-section{
+  text-align: center;
+  padding-top: 30px;
+  height: 100vh;
+}
+
+.background {
+  background-color: #0d2436;
+  background-size: cover;
+  padding: 30px;
+  font-family: "Roboto";
+}
+
+.social-meadia-container {
+  height: 55px;
+  width: 55px;
+  background-color: #152c3e;
+  margin: 5px;
+  color: #5a7184;
+  padding-right: 2px;
+  padding-left: 15px;
+  border-radius: 50px;
+}
+
+.logo-image {
+  text-align: center;
+  width: 50%;
+}
+
+.address-detail {
+  color: #5a7184;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.deatail-heading {
+  color: #5a7184;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.deatail-paragraph {
+  color: #5a7184;
+  font-size: 15px;
+}
+
+.coptright-section {
+  color: #5a7184;
+  text-align: center;
+}
+
+.hr {
+  background-color: #5a7184;
+
+}
+
+@media screen and (max-width: 990px){
+  
+}
+
+@media screen and (min-width: 991px){
+  .Home{
+  background-color: rgb(34, 2, 111);
+  }
+}

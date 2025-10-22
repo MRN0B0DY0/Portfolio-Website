@@ -1,0 +1,296 @@
+*{
+    margin: 0px;
+    padding: 0px; 
+    box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+    background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+    color: #ffffff;
+    height: 300vh;
+}
+
+nav{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around; 
+    background-color: #102030; 
+    position: fixed;
+    top: 0;
+    z-index: 10;
+    height: 10vh;
+    width: 100vw; 
+}
+
+.logo-img {
+    height: 8vh; 
+    border-radius: 50px;  
+
+}
+
+.nav-items { 
+    margin-left: 53vw;
+    width: 23vw;
+    display: flex;
+    justify-content: space-between;  
+    cursor: pointer;
+}
+ 
+.Home-section {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    height: 90vh;
+    margin-top: 10vh;
+    font-size: 1.1rem;
+    line-height: 1.8rem;
+    color: #d0d0d0;
+  scroll-margin-top: 12vh;
+}
+
+.Home-section-card {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;  
+    height: 85vh;
+    width: 95vw;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background: rgba(255, 255, 255, 0.07);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 16px;
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    color: #ffffff;
+}
+
+.home-img {
+    height: 50vh; 
+    border-radius: 500px;
+}
+
+.home-description {
+    width: 40vw;
+    text-align: center;
+    margin-left: 10rem;
+}
+
+.Project-section {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    height: 90vh;  
+  scroll-margin-top: 10vh;
+}
+
+.Project-section-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 50px;
+    height: 85vh;
+    width: 95vw;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background: rgba(255, 255, 255, 0.07);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 16px;
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    color: #ffffff;
+    box-sizing: border-box;
+}
+
+.Project-section-heading {
+    font-size: 2.5rem; 
+}
+
+.Project-list {
+    display: flex;
+    align-items: center;
+    height: 60vh;
+    width: 90vw;
+    margin-top: 2.5rem; 
+    overflow-x: auto; 
+}
+
+.Project-list-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    width: 20vw;
+    margin: 2rem;  
+}
+
+.Project-list-item-img {
+    height: 35vh;
+    width: 15vw;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    margin-bottom: 1rem;
+}
+
+.Project-list-item-heading {
+    margin-bottom: 1rem;
+}
+
+.hidden-button {
+    display: none;
+    padding: 0.5rem 1.2rem;
+    height: 2.2rem;
+    width: 5.5rem;
+    background-color: #009ca0;
+    color: white;
+    font-size: 0.8rem;
+    font-weight: 500;
+    border: 2px solid #00bcc2;
+    border-radius: 6px;
+    cursor: pointer;
+    letter-spacing: 0.6px;
+}
+
+.Project-list-item:hover .hidden-button {
+    display: block;
+}
+
+a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.Education-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;
+    height: 50vh; 
+    scroll-margin-top: 10vh;
+}
+
+.Education-section-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 25px;
+    height: 45vh;
+    width: 95vw;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    color: #ffffff;
+}    
+
+.Education-section-heading {
+    font-size: 2.5rem; 
+}
+
+.Education-section-list {
+    padding: 1.1rem;
+}
+
+.Education-section-list-item {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 50vw;
+    margin: 0.5rem;
+}
+
+.Skill-section {
+    display: flex;
+    justify-content: center; 
+    align-items: flex-start;
+    height: 48vh; 
+}
+
+.Skill-section-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 25px;
+    height: 45vh;
+    width: 95vw;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    color: #ffffff;
+}
+
+.Skill-section-heading {
+    font-size: 2.5rem; 
+    margin-top: 1.5rem;
+}
+
+.Skill-section-list {
+    display: flex;
+    flex-direction: row;
+    width: 90vw;
+    padding: 1.1rem;
+    box-sizing: border-box;
+}
+
+.Skill-section-list-item {
+    display: flex;
+    flex-direction: column; 
+    height: fit-content;
+    width: 20vw; 
+}
+
+.Skill-section-list-item-heading {
+    margin-bottom: 1.5rem;
+}
+
+.Contact-section {
+    display: flex;
+    justify-content: center; 
+    align-items: flex-start;
+    height: 40vh; 
+}
+
+.Contact-section-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    height: 35vh;
+    width: 95vw;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    color: #ffffff;
+}
+
+.Contact-section-app-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 85vw;
+    margin-bottom: 5rem;
+}
+
+.Contact-section-app-list-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
