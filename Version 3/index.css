@@ -1,0 +1,75 @@
+/*
+body {
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+  background: linear-gradient(
+    120deg,
+        rgba(255, 183, 255, 0.4),
+        rgba(150, 255, 255, 0.5),
+        rgba(200, 200, 255, 0.6),
+        rgba(255, 200, 255, 0.5)
+  );
+  background-size: 300% 300%;
+  animation: moveGradient 10s linear infinite;
+  color:;
+}
+
+//Animation to move gradient smoothly from right to left 
+
+@keyframes moveGradient {
+  0% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+
+body {
+  background: linear-gradient(135deg, #89f7fe, #66a6ff);
+  color: #222;
+}
+
+light mode up
+dark mode down 
+
+body {
+  background: radial-gradient(circle at top left, #1f1c2c, #928dab);
+  color: #f5f5f5;
+}
+*/
+
+.animated-bg {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Poppins', sans-serif;
+  font-size: 2rem;
+  color: #333;
+  background: linear-gradient(120deg, 
+    rgba(255, 182, 193, 0.5),
+    rgba(173, 216, 230, 0.5),
+    rgba(144, 238, 144, 0.5),
+    rgba(221, 160, 221, 0.5),
+    rgba(255, 250, 205, 0.5)
+  );
+  background-size: 300% 300%;
+  animation: pastelMove 10s ease-in-out infinite;
+}
+
+/* Animation for a soft pastel movement */
+@keyframes pastelMove {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}

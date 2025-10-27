@@ -4,38 +4,78 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="index.css">
   <title>Version 3</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <script src="https://kit.fontawesome.com/7fac82542b.js" crossorigin="anonymous"></script>
 </head>
 
-<body class="h-screen box-border font-mono flex justify-center items-center">
-  <section class="h-[90vh] w-[95vw] border-2 border-black lg:p-4 flex">
-    <section class="w-1/3"><!--this is first section-->
-      <h1 class="md:text-3xl lg:text-5xl xl:text-7xl 2xl:text-9xl">
+<body class="h-screen box-border font-mono flex justify-center items-center   animated-bg">
+  <section class="h-[90vh] w-[95vw] border-2 border-[#333333] lg:p-4 flex">
+
+    <section class="w-1/2 md:w-1/3"><!--this is first section-->
+      <h1 class="text-3xl lg:text-5xl xl:text-7xl 2xl:text-9xl cursor-default">
         Mohd Omar Ahmed
       </h1>
-      <p class="md:text-xs lg:text-xs xl:text-base 2xl:text-2xl font-bold">Desiner</p>
-      <div class="flex flex-col mt-6 md:text-xs lg:text-xs xl:text-base 2xl:text-2xl font-bold gap-1.5">
-        <a>Home</a>
-        <a>projects</a>
-        <a>education</a>
-        <a>skill</a>
-        <a>contact</a>
+      <p id="animatedword" class="text-xs xl:text-base 2xl:text-2xl font-bold cursor-default">Developer</p>
+      <div class="flex flex-col mt-6 text-xs lg:text-xs xl:text-base 2xl:text-2xl font-bold gap-1.5 cursor-pointer">
+        <a id="home-btn">Home</a>
+        <a id="project-btn">projects</a>
+        <a id="education-btn">education</a>
+        <a id="skill-btn">skill</a>
+        <a id="contact-btn">contact</a>
       </div>
     </section>
 
-    <section class="w-2/3 flex"><!--contains second and third section-->
-      <section class="h-full w-1/2"><!--this is second section style for project section -> md:h-1/2 md:w-full lg:h-full lg:w-1/2 lg:flex-->
-        section 2
+    <section class="w-1/2 md:w-2/3 flex"><!--contains second and third section-->
+      <section class="md:w-1/2 hidden md:flex"><!--this is second section-->
+        <div id="display-section" class="h-[80vh] lg:h-[75vh] xl:h-[69vh] 2xl:h-[71rem] w-full mt-16 md:mt-[4rem] lg:mt-20 xl:mt-36 2xl:mt-60">
+
+          <div id="dreamHarmoneyDIS" class="hidden p-5 text-center flex flex-col items-center gap-10"> <!--dreamHarmoney-->
+            <img src="https://res.cloudinary.com/dc8dtnohy/image/upload/v1754221460/Dreamharmoney_a9yizr.png" alt="DreamHarmoney" class="h-[50vh] lg:h-[45vh] xl:h-[39vh] 2xl:h-[41rem] rounded-xl"/>
+            <a class="lg:h-[2.2rem] lg:w-[5.5rem] pt-[0.5rem] pb-[0.5rem] pl-[1.2rem] pr-[1.2rem] text-xs xl:text-base 2xl:text-2xl font-bold cursor-pointer" href="https://github.com/MRN0B0DY0/Dream-Harmony" target="_blank">GitHub</a>
+          </div>
+
+          <div id="FoodMunchDIS" class="hidden p-5 text-center flex flex-col items-center gap-10"> <!--FoodMunch-->
+            <img src="https://res.cloudinary.com/dc8dtnohy/image/upload/v1754234233/Foodmunch3_5_fq3ftq.png" alt="FoodMunch" class="h-[50vh] lg:h-[45vh] xl:h-[39vh] 2xl:h-[41rem] rounded-xl"/>
+            <a class="lg:h-[2.2rem] lg:w-[5.5rem] pt-[0.5rem] pb-[0.5rem] pl-[1.2rem] pr-[1.2rem] text-xs xl:text-base 2xl:text-2xl font-bold cursor-pointer" href="https://github.com/MRN0B0DY0/FoodMunch" target="_blank">GitHub</a>
+          </div>
+
+          <div id="TodoListDIS" class="hidden p-5 text-center flex flex-col items-center gap-10"> <!--TodoList-->
+            <img src="https://res.cloudinary.com/dc8dtnohy/image/upload/v1754235323/Todolist3_5_xdt38d.png" alt="TodoList" class="h-[50vh] lg:h-[45vh] xl:h-[39vh] 2xl:h-[41rem] rounded-xl"/>
+            <a class="lg:h-[2.2rem] lg:w-[5.5rem] pt-[0.5rem] pb-[0.5rem] pl-[1.2rem] pr-[1.2rem] text-xs xl:text-base 2xl:text-2xl font-bold cursor-pointer" href="https://github.com/MRN0B0DY0/Todo-List" target="_blank">GitHub</a>
+          </div>
+
+          <div id="GallaryAppDIS" class="hidden p-5 text-center flex flex-col items-center gap-10"> <!--GallaryApp-->
+            <img src="https://res.cloudinary.com/dc8dtnohy/image/upload/v1754236885/Gallaryapp3_5_nq5ira.png" alt="GallaryApp" class="h-[50vh] lg:h-[45vh] xl:h-[39vh] 2xl:h-[41rem] rounded-xl"/>
+            <a class="lg:h-[2.2rem] lg:w-[5.5rem] pt-[0.5rem] pb-[0.5rem] pl-[1.2rem] pr-[1.2rem] text-xs xl:text-base 2xl:text-2xl font-bold cursor-pointer" href="https://github.com/MRN0B0DY0/Gallary-App" target="_blank">GitHub</a>
+          </div>
+
+          <div id="SearchLocationDIS" class="hidden p-5 text-center flex flex-col items-center gap-10"> <!--SearchLocation-->
+            <img src="https://res.cloudinary.com/dc8dtnohy/image/upload/v1754666364/searchdestination3_5_bbablg.png" alt="Search-Location" class="h-[50vh] lg:h-[45vh] xl:h-[39vh] 2xl:h-[41rem] rounded-xl"/>
+            <a class="lg:h-[2.2rem] lg:w-[5.5rem] pt-[0.5rem] pb-[0.5rem] pl-[1.2rem] pr-[1.2rem] text-xs xl:text-base 2xl:text-2xl font-bold cursor-pointer" href="https://github.com/MRN0B0DY0/Search-Destination" target="_blank">GitHub</a>
+          </div>
+
+          <div id="BrowserHistoryDIS" class="hidden p-5 text-center flex flex-col items-center gap-10"> <!--BrowserHistory-->
+            <img src="https://res.cloudinary.com/dc8dtnohy/image/upload/v1754666364/searchhistory_fc7isy.png" alt="BrowserHistory" class="h-[50vh] lg:h-[45vh] xl:h-[39vh] 2xl:h-[41rem] rounded-xl"/>
+            <a class="lg:h-[2.2rem] lg:w-[5.5rem] pt-[0.5rem] pb-[0.5rem] pl-[1.2rem] pr-[1.2rem] text-xs xl:text-base 2xl:text-2xl font-bold cursor-pointer" href="https://github.com/MRN0B0DY0/Browser-History" target="_blank">GitHub</a>
+          </div>
+
+          <div id="CapitalSearchDIS" class="hidden p-5 text-center flex flex-col items-center gap-10"> <!--CapitalSearch-->
+            <img src="https://res.cloudinary.com/dc8dtnohy/image/upload/v1754666364/capital_app_pnfe6y.png" alt="CapitalSearch" class="h-[50vh] lg:h-[45vh] xl:h-[39vh] 2xl:h-[41rem] rounded-xl"/>
+            <a class="lg:h-[2.2rem] lg:w-[5.5rem] pt-[0.5rem] pb-[0.5rem] pl-[1.2rem] pr-[1.2rem] text-xs xl:text-base 2xl:text-2xl font-bold cursor-pointer" href="https://github.com/MRN0B0DY0/Capital-Search" target="_blank">GitHub</a>
+          </div>
+
+
+        </div>
       </section>
 
-      <section class="h-full w-1/2"><!--this is third section style for project section -> md:h-1/2 md:w-full lg:h-full lg:w-1/2-->
+      <section class="h-full w-full md:w-1/2"><!--this is third section-->
 
-        <div class="hidden "> <!--home section-->
-          <div class="md:h-[80vh] lg:h-[75vh] xl:h-[70vh] 2xl:h-[71rem] md:mt-[4rem] lg:mt-20 xl:mt-36 2xl:mt-60 flex flex-col justify-end">
-            <div id="lg-Home" class="md:text-xs lg:text-xs xl:text-base 2xl:text-2xl">
-              <p>
+        <div id="home-section"> <!--home section-->
+          <div class="h-[80vh] lg:h-[75vh] xl:h-[69vh] 2xl:h-[71rem] mt-16 md:mt-[4rem] lg:mt-20 xl:mt-36 2xl:mt-60 flex flex-col justify-end text-right cursor-default">
+            <div class="text-xs lg:text-xs xl:text-base 2xl:text-2xl">
+              <p class="text-balance md:pb-1.5 md:pr-2 lg:pr-0">
                 My name is Omar Ahmed, and I have compeleted my B-Tech in
                 Electrical and Electronic Engineering. Alongside my engineering
                 studies, I have cultivated a strong proficiency in various
@@ -49,152 +89,158 @@
           </div>
         </div>  
 
-        <div class="hidden "><!--project section-->
-          <div id="lg-project" class="h-[75vh] xl:h-[70vh] 2xl:h-[71rem] lg:mt-20 xl:mt-36 2xl:mt-60 pr-2 overflow-y-auto text-right">
-            <a>
-              <h1 class="lg:text-5xl xl:text-7xl 2xl:text-9xl">Dream Harmony</h1>
-              <p class="lg:text-xs xl:text-base 2xl:text-2xl mt-4 font-bold">2/2/2022</p>
+        <div id="project-section" class="hidden"><!--project section-->
+          <div id="lg-project" class="h-[80vh] lg:h-[73vh] xl:h-[69vh] 2xl:h-[82rem] mt-16 md:mt-[4rem] lg:mt-20 xl:mt-36 2xl:mt-60 pr-2 overflow-y-auto text-right cursor-default md:cursor-pointer">
+            <a id="DreamHarmoneyBTN">
+              <h1 class="text-3xl lg:text-5xl xl:text-7xl 2xl:text-9xl">Dream Harmony</h1>
+              <p class="text-xs lg:text-xs xl:text-base 2xl:text-2xl mt-4 font-bold">2/2/2022</p>
             </a>
-            <a>
-              <h1 class="lg:text-5xl xl:text-7xl 2xl:text-9xl">Food Munch</h1>
-              <p class="lg:text-xs xl:text-base 2xl:text-2xl mt-4 font-bold">2/2/2022</p>
+            <a id="FoodMunchBTN">
+              <h1 class="text-3xl lg:text-5xl xl:text-7xl 2xl:text-9xl">Food Munch</h1>
+              <p class="text-xs lg:text-xs xl:text-base 2xl:text-2xl mt-4 font-bold">2/2/2022</p>
             </a>
-            <a>
-              <h1 class="lg:text-5xl xl:text-7xl 2xl:text-9xl">Todo List</h1>
-              <p class="lg:text-xs xl:text-base 2xl:text-2xl mt-4 font-bold">2/2/2022</p>
+            <a id="TodoListBTN">
+              <h1 class="text-3xl lg:text-5xl xl:text-7xl 2xl:text-9xl">Todo List</h1>
+              <p class="text-xs lg:text-xs xl:text-base 2xl:text-2xl mt-4 font-bold">2/2/2022</p>
             </a>
-            <a>
-              <h1 class="lg:text-5xl xl:text-7xl 2xl:text-9xl">Gallary</h1>
-              <p class="lg:text-xs xl:text-base 2xl:text-2xl mt-4 font-bold">2/2/2022</p>
+            <a id="GallaryAppBTN">
+              <h1 class="text-3xl lg:text-5xl xl:text-7xl 2xl:text-9xl">Gallary</h1>
+              <p class="text-xs lg:text-xs xl:text-base 2xl:text-2xl mt-4 font-bold">2/2/2022</p>
             </a>
-            <a>
-              <h1 class="lg:text-5xl xl:text-7xl 2xl:text-9xl">Search Destination</h1>
-              <p class="lg:text-xs xl:text-base 2xl:text-2xl mt-4 font-bold">2/2/2022</p>
+            <a id="SearchLocationBTN">
+              <h1 class="text-3xl lg:text-5xl xl:text-7xl 2xl:text-9xl">Search Location</h1>
+              <p class="text-xs lg:text-xs xl:text-base 2xl:text-2xl mt-4 font-bold">2/2/2022</p>
             </a>
-            <a>
-              <h1 class="lg:text-5xl xl:text-7xl 2xl:text-9xl">Browser History</h1>
-              <p class="lg:text-xs xl:text-base 2xl:text-2xl mt-4 font-bold">2/2/2022</p>
+            <a id="BrowserHistoryBTN">
+              <h1 class="text-3xl lg:text-5xl xl:text-7xl 2xl:text-9xl">Browser History</h1>
+              <p class="text-xs lg:text-xs xl:text-base 2xl:text-2xl mt-4 font-bold">2/2/2022</p>
             </a>
-            <a>
-              <h1 class="lg:text-5xl xl:text-7xl 2xl:text-9xl">Capitals Search</h1>
-              <p class="lg:text-xs xl:text-base 2xl:text-2xl mt-4 font-bold">2/2/2022</p>
+            <a id="CapitalSearchBTN">
+              <h1 class="text-3xl lg:text-5xl xl:text-7xl 2xl:text-9xl">Capitals Search</h1>
+              <p class="text-xs lg:text-xs xl:text-base 2xl:text-2xl mt-4 font-bold">2/2/2022</p>
             </a>
           </div>
         </div>
         
-        <div class="hidden "><!--education section-->
-          <div class="md:h-[80vh] lg:h-[75vh] xl:h-[70vh] 2xl:h-[71rem] flex flex-col gap-10 md:mt-[4rem] lg:mt-20 xl:mt-36 2xl:mt-60 pr-2 overflow-y-auto text-center">
+        <div id="education-section" class="hidden"><!--education section-->
+          <div class="h-[80vh] lg:h-[75vh] xl:h-[69vh] 2xl:h-[71rem] flex flex-col gap-10 mt-16 md:mt-[4rem] lg:mt-20 xl:mt-36 2xl:mt-60 pr-2 overflow-y-auto text-center cursor-default">
             <div>
               <div>
-                <h1 class="md:text-3xl lg:text-5xl xl:text-7xl 2xl:text-9xl">Nxtwave Disruptive Technologie</h1>
-                <p class="md:text-xs lg:text-xs xl:text-base 2xl:text-2xl mt-3 font-bold">Industry Ready Certification in Full-stack Development</p>
+                <h1 class="text-3xl lg:text-5xl xl:text-7xl 2xl:text-9xl">Nxtwave Disruptive Technologie</h1>
+                <p class="text-xs lg:text-xs xl:text-base 2xl:text-2xl mt-3 font-bold">Industry Ready Certification in Full-stack Development</p>
               </div>
-              <p class="md:text-xs lg:text-xs xl:text-base 2xl:text-2xl mt-3 font-bold">Aug 2022- Ongoing</p>
+              <p class="text-xs lg:text-xs xl:text-base 2xl:text-2xl mt-3 font-bold">Aug 2022- Ongoing</p>
             </div>
             <div>
               <div>
-                <h1 class="md:text-3xl lg:text-5xl xl:text-7xl 2xl:text-9xl">SRM Institute of Science and Technology</h1>
-                <p class="md:text-xs lg:text-xs xl:text-base 2xl:text-2xl mt-3 font-bold">
+                <h1 class="text-3xl lg:text-5xl xl:text-7xl 2xl:text-9xl">SRM Institute of Science and Technology</h1>
+                <p class="text-xs lg:text-xs xl:text-base 2xl:text-2xl mt-3 font-bold">
                   B-Tech (Bachelor of Technology)_Electrical & Electronics
                   Engineering (EEE) (8.7 CGPA)
                 </p>
               </div>
-              <p class="md:text-xs lg:text-xs xl:text-base 2xl:text-2xl mt-3 font-bold">2021-2025</p>
+              <p class="text-xs lg:text-xs xl:text-base 2xl:text-2xl mt-3 font-bold">2021-2025</p>
             </div>
             <div>
               <div>
-                <h1 class="md:text-3xl lg:text-5xl xl:text-7xl 2xl:text-9xl">Tomar Children School</h1>
-                <p class="md:text-xs lg:text-xs xl:text-base 2xl:text-2xl mt-3 font-bold">Intermediate(86.8%)</p>
+                <h1 class="text-3xl lg:text-5xl xl:text-7xl 2xl:text-9xl">Tomar Children School</h1>
+                <p class="text-xs lg:text-xs xl:text-base 2xl:text-2xl mt-3 font-bold">Intermediate(86.8%)</p>
               </div>
-              <p class="md:text-xs lg:text-xs xl:text-base 2xl:text-2xl mt-3 font-bold">2020-2021</p>
+              <p class="text-xs lg:text-xs xl:text-base 2xl:text-2xl mt-3 font-bold">2020-2021</p>
             </div>
             <div>
               <div>
-                <h1 class="md:text-3xl lg:text-5xl xl:text-7xl 2xl:text-9xl">Tomar Children School</h1>
-                <p class="md:text-xs lg:text-xs xl:text-base 2xl:text-2xl mt-3 font-bold">Secondary School Of Certificate (82.16%)</p>
+                <h1 class="text-3xl lg:text-5xl xl:text-7xl 2xl:text-9xl">Tomar Children School</h1>
+                <p class="text-xs lg:text-xs xl:text-base 2xl:text-2xl mt-3 font-bold">Secondary School Of Certificate (82.16%)</p>
               </div>
-              <p class="md:text-xs lg:text-xs xl:text-base 2xl:text-2xl mt-3 font-bold">2018-2019</p>
+              <p class="text-xs lg:text-xs xl:text-base 2xl:text-2xl mt-3 font-bold">2018-2019</p>
             </div>
           </div>
         </div>
 
-        <div class="hidden "> <!--skills section-->
-          <div class="md:h-[80vh] lg:h-[75vh] xl:h-[70vh] 2xl:h-[71rem] flex flex-col pr-2 md:mt-[4rem] lg:mt-20 xl:mt-36 2xl:mt-60 overflow-y-auto text-right">
+        <div id="skill-section" class="hidden"> <!--skills section-->
+          <div class="h-[80vh] lg:h-[75vh] xl:h-[69vh] 2xl:h-[71rem] flex flex-col pr-2 mt-16 md:mt-[4rem] lg:mt-20 xl:mt-36 2xl:mt-60 overflow-y-auto text-right cursor-default">
             <div class="flex flex-col items-end mb-5">
-              <h1 class="md:text-3xl lg:text-5xl xl:text-7xl 2xl:text-9xl">Frontend</h1>
-              <label for="file" class="md:text-xs lg:text-xs xl:text-base 2xl:text-2xl lg:mt-4 font-bold">HTML</label>
+              <h1 class="text-3xl lg:text-5xl xl:text-7xl 2xl:text-9xl">Frontend</h1>
+              <label for="file" class="text-xs lg:text-xs xl:text-base 2xl:text-2xl lg:mt-4 font-bold">HTML</label>
 
               <div class="h-4 w-[10rem] 2xl:h-8 xl:w-[15rem] 2xl:w-[27rem] bg-gray-300 rounded-full">
                 <div class="h-4 2xl:h-8 bg-blue-500 rounded-full w-[95%]"></div>
               </div>
 
-              <label for="file" class="md:text-xs lg:text-xs xl:text-base 2xl:text-2xl lg:mt-4 font-bold">CSS</label>
+              <label for="file" class="text-xs lg:text-xs xl:text-base 2xl:text-2xl lg:mt-4 font-bold">CSS</label>
 
               <div class="h-4 w-[10rem] 2xl:h-8 xl:w-[15rem] 2xl:w-[27rem] bg-gray-300 rounded-full">
                 <div class="h-4 2xl:h-8 bg-blue-500 rounded-full w-[95%]"></div>
               </div>
 
-              <label for="file" class="md:text-xs lg:text-xs xl:text-base 2xl:text-2xl lg:mt-4 font-bold">Bootstrap</label>
+              <label for="file" class="text-xs lg:text-xs xl:text-base 2xl:text-2xl lg:mt-4 font-bold">Tailwind</label>
+              
+              <div class="h-4 w-[10rem] 2xl:h-8 xl:w-[15rem] 2xl:w-[27rem] bg-gray-300 rounded-full">
+                <div class="h-4 2xl:h-8 bg-blue-500 rounded-full w-[50%]"></div>
+              </div>
+
+              <label for="file" class="text-xs lg:text-xs xl:text-base 2xl:text-2xl lg:mt-4 font-bold">Bootstrap</label>
               
               <div class="h-4 w-[10rem] 2xl:h-8 xl:w-[15rem] 2xl:w-[27rem] bg-gray-300 rounded-full">
                 <div class="h-4 2xl:h-8 bg-blue-500 rounded-full w-[75%]"></div>
               </div>
 
-              <label for="file" class="md:text-xs lg:text-xs xl:text-base 2xl:text-2xl lg:mt-4 font-bold">JavaScript</label>
+              <label for="file" class="text-xs lg:text-xs xl:text-base 2xl:text-2xl lg:mt-4 font-bold">JavaScript</label>
               
               <div class="h-4 w-[10rem] 2xl:h-8 xl:w-[15rem] 2xl:w-[27rem] bg-gray-300 rounded-full">
                 <div class="h-4 2xl:h-8 bg-blue-500 rounded-full w-[85%]"></div>
               </div>
 
-              <label for="file" class="md:text-xs lg:text-xs xl:text-base 2xl:text-2xl lg:mt-4 font-bold">React</label>
+              <label for="file" class="text-xs lg:text-xs xl:text-base 2xl:text-2xl lg:mt-4 font-bold">React</label>
               
               <div class="h-4 w-[10rem] 2xl:h-8 xl:w-[15rem] 2xl:w-[27rem] bg-gray-300 rounded-full">
                 <div class="h-4 2xl:h-8 bg-blue-500 rounded-full w-[50%]"></div>
               </div>
             </div>
             <div class="flex flex-col items-end mb-5">
-              <h1 class="md:text-3xl lg:text-5xl xl:text-7xl 2xl:text-9xl">Backend</h1>
-              <label for="file" class="md:text-xs lg:text-xs xl:text-base 2xl:text-2xl lg:mt-4 font-bold">Python</label>
+              <h1 class="text-3xl lg:text-5xl xl:text-7xl 2xl:text-9xl">Backend</h1>
+              <label for="file" class="text-xs lg:text-xs xl:text-base 2xl:text-2xl lg:mt-4 font-bold">Python</label>
                 
               <div class="h-4 w-[10rem] 2xl:h-8 xl:w-[15rem] 2xl:w-[27rem] bg-gray-300 rounded-full">
                 <div class="h-full bg-blue-500 rounded-full w-[80%]"></div>
               </div>
 
-              <label for="file" class="md:text-xs lg:text-xs xl:text-base 2xl:text-2xl lg:mt-4 font-bold">Express</label>
+              <label for="file" class="text-xs lg:text-xs xl:text-base 2xl:text-2xl lg:mt-4 font-bold">Express</label>
                 
               <div class="h-4 w-[10rem] 2xl:h-8 xl:w-[15rem] 2xl:w-[27rem] bg-gray-300 rounded-full">
                 <div class=" h-full bg-blue-500 rounded-full w-[80%]"></div>
               </div>
 
-              <label for="file" class="md:text-xs lg:text-xs xl:text-base 2xl:text-2xl lg:mt-4 font-bold">Node.js</label>
+              <label for="file" class="text-xs lg:text-xs xl:text-base 2xl:text-2xl lg:mt-4 font-bold">Node.js</label>
               
               <div class="h-4 w-[10rem] 2xl:h-8 xl:w-[15rem] 2xl:w-[27rem] bg-gray-300 rounded-full">
                 <div class=" h-full bg-blue-500 rounded-full w-[80%]"></div>
               </div>
             </div>
             <div class="flex flex-col items-end mb-5">
-              <h1 class="md:text-3xl lg:text-5xl xl:text-7xl 2xl:text-9xl">Databases</h1>
-              <label for="file" class="md:text-xs lg:text-xs xl:text-base 2xl:text-2xl lg:mt-4 font-bold">SQLite</label>
+              <h1 class="text-3xl lg:text-5xl xl:text-7xl 2xl:text-9xl">Databases</h1>
+              <label for="file" class="text-xs lg:text-xs xl:text-base 2xl:text-2xl lg:mt-4 font-bold">SQLite</label>
               
               <div class="h-4 w-[10rem] 2xl:h-8 xl:w-[15rem] 2xl:w-[27rem] bg-gray-300 rounded-full">
                 <div class="h-full bg-blue-500 rounded-full w-[90%]"></div></br>
               </div>
             </div>
             <div class="flex flex-col items-end mb-5">
-              <h1 class="md:text-3xl lg:text-5xl xl:text-7xl 2xl:text-9xl">Technical Proficiency</h1>
-              <label for="file" class="md:text-xs lg:text-xs xl:text-base 2xl:text-2xl lg:mt-4 font-bold">Flexbox</label>
+              <h1 class="text-3xl lg:text-5xl xl:text-7xl 2xl:text-9xl">Technical Proficiency</h1>
+              <label for="file" class="text-xs lg:text-xs xl:text-base 2xl:text-2xl lg:mt-4 font-bold">Flexbox</label>
               
               <div class="h-4 w-[10rem] 2xl:h-8 xl:w-[15rem] 2xl:w-[27rem] bg-gray-300 rounded-full">
                 <div class="h-full bg-blue-500 rounded-full w-[95%]"></div>
               </div>
 
-              <label for="file" class="md:text-xs lg:text-xs xl:text-base 2xl:text-2xl lg:mt-4 font-bold"> Mobile Application Development</label>
+              <label for="file" class="text-xs lg:text-xs xl:text-base 2xl:text-2xl lg:mt-4 font-bold"> Mobile Application Development</label>
               
               <div class="h-4 w-[10rem] 2xl:h-8 xl:w-[15rem] 2xl:w-[27rem] bg-gray-300 rounded-full">
                 <div class="h-full bg-blue-500 rounded-full w-[50%]"></div>
               </div>
 
-              <label for="file" class="md:text-xs lg:text-xs xl:text-base 2xl:text-2xl lg:mt-4 font-bold">Power BI</label>
+              <label for="file" class="text-xs lg:text-xs xl:text-base 2xl:text-2xl lg:mt-4 font-bold">Power BI</label>
               
               <div class="h-4 w-[10rem] 2xl:h-8 xl:w-[15rem] 2xl:w-[27rem] bg-gray-300 rounded-full">
                 <div class="h-full bg-blue-500 rounded-full w-[40%]"></div>
@@ -204,9 +250,9 @@
           </div>
         </div>
 
-        <div class="hidden "><!--contact section-->
+        <div id="contact-section" class="hidden"><!--contact section-->
 
-          <div class="md:h-[80vh] lg:h-[75vh] xl:h-[70vh] 2xl:h-[71rem] w-full flex flex-col pr-2 md:mt-[4rem] lg:mt-20 xl:mt-36 2xl:mt-60 justify-around items-center">
+          <div class="h-[80vh] lg:h-[75vh] xl:h-[69vh] 2xl:h-[71rem] w-full flex flex-col pr-2 md:mt-[4rem] lg:mt-20 xl:mt-36 2xl:mt-60 justify-around items-center cursor-default">
             <div class="md:text-sm lg:text-xl xl:text-2xl 2xl:text-4xl">
               <i class="fa-solid fa-envelope fa-2xl"></i>
             </div>
@@ -221,6 +267,8 @@
       </section>
     </section>
   </section>
+
+  <script src="index.js"></script>
 </body>
 
 </html>
