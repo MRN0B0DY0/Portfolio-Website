@@ -1,67 +1,18 @@
-/*
-body {
-  height: 100vh;
-  width: 100%;
-  overflow: hidden;
-  background: linear-gradient(
-    120deg,
-        rgba(255, 183, 255, 0.4),
-        rgba(150, 255, 255, 0.5),
-        rgba(200, 200, 255, 0.6),
-        rgba(255, 200, 255, 0.5)
-  );
-  background-size: 300% 300%;
-  animation: moveGradient 10s linear infinite;
-  color:;
-}
-
-//Animation to move gradient smoothly from right to left 
-
-@keyframes moveGradient {
-  0% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
-}
-
-
-body {
-  background: linear-gradient(135deg, #89f7fe, #66a6ff);
-  color: #222;
-}
-
-light mode up
-dark mode down 
-
-body {
-  background: radial-gradient(circle at top left, #1f1c2c, #928dab);
-  color: #f5f5f5;
-}
-*/
 
 .animated-bg {
-  height: 100vh;
-  width: 100vw;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   font-family: 'Poppins', sans-serif;
-  font-size: 2rem;
   color: #333;
   background: linear-gradient(120deg, 
-    rgba(255, 182, 193, 0.5),
-    rgba(173, 216, 230, 0.5),
-    rgba(144, 238, 144, 0.5),
-    rgba(221, 160, 221, 0.5),
-    rgba(255, 250, 205, 0.5)
+    #FFB6C180,
+    #ADD8E680,
+    #90EE9080,
+    #DDA0DD80,
+    #FFFACD80
   );
   background-size: 300% 300%;
   animation: pastelMove 10s ease-in-out infinite;
 }
-
-/* Animation for a soft pastel movement */
+ 
 @keyframes pastelMove {
   0% {
     background-position: 0% 50%;
@@ -72,4 +23,68 @@ body {
   100% {
     background-position: 0% 50%;
   }
+}
+
+.git-btn {
+  padding: 0.9rem 2.2rem;
+  border: none;
+  border-radius: 50px;
+  background: linear-gradient(90deg, #ffdee9, #b5fffc);
+  background-size: 200%; 
+  font-family: 'Poppins', sans-serif;  
+  transition: all 0.4s ease;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.git-btn:hover {
+  background-position: 100% 0;
+  box-shadow: 0 8px 25px rgba(173, 216, 230, 0.5);
+  transform: scale(1.05);
+}
+
+
+/* this is the color background for dark mode */
+
+.dark-animated-bg {
+  font-family: 'Poppins', sans-serif;
+  color: #f5f5f5; 
+  background: linear-gradient(120deg,
+    #1E1E2FE6,
+    #323246CC,
+    #191919E6,
+    #3C3C5ACC,
+    #232332E6
+  );
+  background-size: 300% 300%;
+  animation: darkPastelMove 10s ease-in-out infinite;
+}
+
+@keyframes darkPastelMove {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.dark-git-btn {
+  padding: 0.9rem 2.2rem;
+  border: none;
+  border-radius: 50px;
+  background: linear-gradient(90deg, #3a3a6a, #202040);
+  background-size: 200%;
+  color: #eaeaea;
+  font-family: 'Poppins', sans-serif;
+  transition: all 0.4s ease;
+  box-shadow: 0 4px 20px #00000066;
+}
+
+.dark-git-btn:hover {
+  background-position: 100% 0;
+  box-shadow: 0 8px 25px #6495ED66;
+  transform: scale(1.05);
 }

@@ -13,6 +13,7 @@ const skillsection = document.getElementById("skill-section");
 const contactsection = document.getElementById("contact-section");
 
 // all the projects button 
+const BookNestBTN = document.getElementById("BookNestBTN");
 const DreamHarmoneyBTN = document.getElementById("DreamHarmoneyBTN");
 const FoodMunchBTN = document.getElementById("FoodMunchBTN");
 const TodoListBTN = document.getElementById("TodoListBTN");
@@ -22,6 +23,7 @@ const BrowserHistoryBTN = document.getElementById("BrowserHistoryBTN");
 const CapitalSearchBTN = document.getElementById("CapitalSearchBTN");
 
 // all the sections to be displayed by project button
+const BookNestDIS = document.getElementById("BookNestDIS");
 const dreamHarmoneyDIS = document.getElementById("dreamHarmoneyDIS");
 const FoodMunchDIS = document.getElementById("FoodMunchDIS");
 const TodoListDIS = document.getElementById("TodoListDIS");
@@ -33,6 +35,18 @@ const CapitalSearchDIS = document.getElementById("CapitalSearchDIS");
 // it hiddes the section of projects
 const displaySection = document.getElementById("display-section");
 
+//all mode button 
+const lightbtn = document.getElementById("lightbtn");
+const lighttext = document.getElementById("lighttext");
+const darkbtn = document.getElementById("darkbtn");
+const darktext = document.getElementById("darktext");
+
+//body container
+const MainContainer = document.getElementById("MainContainer");
+
+//git button
+const GitBtn = document.getElementById("GitBtn");
+
 // navbar button
 homebtn.addEventListener("click", () => {
   projectsection.classList.add("hidden");
@@ -43,6 +57,7 @@ homebtn.addEventListener("click", () => {
   homesection.classList.remove("hidden");
 
   //hide all the opened projects before opening this section
+  BookNestDIS.classList.add("hidden");
   dreamHarmoneyDIS.classList.add("hidden");
   FoodMunchDIS.classList.add("hidden");
   TodoListDIS.classList.add("hidden");
@@ -58,7 +73,7 @@ projectbtn.addEventListener("click", () => {
   skillsection.classList.add("hidden");
   contactsection.classList.add("hidden");
   displaySection.classList.remove("hidden");
-  dreamHarmoneyDIS.classList.remove("hidden");
+  BookNestDIS.classList.remove("hidden");
   projectsection.classList.remove("hidden");
 });
 
@@ -71,6 +86,7 @@ educationbtn.addEventListener("click", () => {
   educationsection.classList.remove("hidden");
 
   //hide all the opened projects before opening this section
+  BookNestDIS.classList.add("hidden");
   dreamHarmoneyDIS.classList.add("hidden");
   FoodMunchDIS.classList.add("hidden");
   TodoListDIS.classList.add("hidden");
@@ -89,6 +105,7 @@ skillbtn.addEventListener("click", () => {
   skillsection.classList.remove("hidden");
 
   //hide all the opened projects before opening this section
+  BookNestDIS.classList.add("hidden");
   dreamHarmoneyDIS.classList.add("hidden");
   FoodMunchDIS.classList.add("hidden");
   TodoListDIS.classList.add("hidden");
@@ -107,6 +124,7 @@ contactbtn.addEventListener("click", () => {
   contactsection.classList.remove("hidden");
 
   //hide all the opened projects before opening this section
+  BookNestDIS.classList.add("hidden");
   dreamHarmoneyDIS.classList.add("hidden");
   FoodMunchDIS.classList.add("hidden");
   TodoListDIS.classList.add("hidden");
@@ -117,7 +135,19 @@ contactbtn.addEventListener("click", () => {
 });
 
 // all the button of project 
+BookNestBTN.addEventListener("click", () => {
+    dreamHarmoneyDIS.classList.add("hidden");
+    FoodMunchDIS.classList.add("hidden");
+    TodoListDIS.classList.add("hidden");
+    GallaryAppDIS.classList.add("hidden");
+    SearchLocationDIS.classList.add("hidden");
+    BrowserHistoryDIS.classList.add("hidden");
+    CapitalSearchDIS.classList.add("hidden");
+    BookNestDIS.classList.remove("hidden");
+});
+
 DreamHarmoneyBTN.addEventListener("click", () => {
+  BookNestDIS.classList.add("hidden");
   FoodMunchDIS.classList.add("hidden");
   TodoListDIS.classList.add("hidden");
   GallaryAppDIS.classList.add("hidden");
@@ -128,6 +158,7 @@ DreamHarmoneyBTN.addEventListener("click", () => {
 });
 
 FoodMunchBTN.addEventListener("click", () => {
+  BookNestDIS.classList.add("hidden");
   dreamHarmoneyDIS.classList.add("hidden");
   TodoListDIS.classList.add("hidden");
   GallaryAppDIS.classList.add("hidden");
@@ -138,6 +169,7 @@ FoodMunchBTN.addEventListener("click", () => {
 });
 
 TodoListBTN.addEventListener("click", () => {
+  BookNestDIS.classList.add("hidden");
   FoodMunchDIS.classList.add("hidden");
   dreamHarmoneyDIS.classList.add("hidden");
   GallaryAppDIS.classList.add("hidden");
@@ -148,6 +180,7 @@ TodoListBTN.addEventListener("click", () => {
 });
 
 GallaryAppBTN.addEventListener("click", () => {
+  BookNestDIS.classList.add("hidden");
   FoodMunchDIS.classList.add("hidden");
   TodoListDIS.classList.add("hidden");
   dreamHarmoneyDIS.classList.add("hidden");
@@ -158,6 +191,7 @@ GallaryAppBTN.addEventListener("click", () => {
 });
 
 SearchLocationBTN.addEventListener("click", () => {
+  BookNestDIS.classList.add("hidden");
   FoodMunchDIS.classList.add("hidden");
   TodoListDIS.classList.add("hidden");
   GallaryAppDIS.classList.add("hidden");
@@ -168,6 +202,7 @@ SearchLocationBTN.addEventListener("click", () => {
 });
 
 BrowserHistoryBTN.addEventListener("click", () => {
+  BookNestDIS.classList.add("hidden");
   FoodMunchDIS.classList.add("hidden");
   TodoListDIS.classList.add("hidden");
   GallaryAppDIS.classList.add("hidden");
@@ -178,6 +213,7 @@ BrowserHistoryBTN.addEventListener("click", () => {
 });
 
 CapitalSearchBTN.addEventListener("click", () => {
+  BookNestDIS.classList.add("hidden");
   FoodMunchDIS.classList.add("hidden");
   TodoListDIS.classList.add("hidden");
   GallaryAppDIS.classList.add("hidden");
@@ -190,7 +226,7 @@ CapitalSearchBTN.addEventListener("click", () => {
 
 // animated word
 const textBox = document.getElementById("animatedword");
-const words = ["Developer", "Designer", "Learner", "Innovator"];
+const words = ["Developer", "Designer", "Learner"];
 let index = 0;
 
 setInterval(() => {
@@ -202,3 +238,45 @@ setInterval(() => {
     textBox.classList.remove("opacity-0");
   }, 700);
 }, 2000);
+
+
+
+//light & dark mode 
+
+lightbtn.addEventListener('change', () => {
+    if (lightbtn.checked) {
+        lightbtn.checked = false;
+        lightbtn.classList.add("hidden");
+        lighttext.classList.add("hidden");
+        darkbtn.classList.remove("hidden");
+        darktext.classList.remove("hidden");
+        
+        MainContainer.classList.add("animated-bg");
+        MainContainer.classList.remove("dark-animated-bg");
+
+        const gitButtons = document.querySelectorAll(".dark-git-btn");
+        gitButtons.forEach(btn => {
+            btn.classList.add("git-btn");
+            btn.classList.remove("dark-git-btn");
+        });
+    }
+})
+
+darkbtn.addEventListener('change', () => {
+    if (darkbtn.checked) {
+        darkbtn.checked = false;
+        darkbtn.classList.add("hidden");
+        darktext.classList.add("hidden");
+        lightbtn.classList.remove("hidden");
+        lighttext.classList.remove("hidden");
+
+        MainContainer.classList.remove("animated-bg");
+        MainContainer.classList.add("dark-animated-bg");
+
+        const gitButtons = document.querySelectorAll(".git-btn");
+        gitButtons.forEach(btn => {
+            btn.classList.add("dark-git-btn");
+            btn.classList.remove("git-btn");
+        });
+    }
+})
